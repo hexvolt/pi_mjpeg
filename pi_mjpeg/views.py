@@ -12,4 +12,4 @@ def index():
 @app.route('/mjpeg_stream')
 def mjpeg_stream():
 
-    return Response(http_frame_generator, mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(http_frame_generator(), mimetype='multipart/x-mixed-replace; boundary=frame')
