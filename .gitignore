@@ -1,0 +1,5 @@
+*.pyc
+
+.coverage
+.venv
+.idea
